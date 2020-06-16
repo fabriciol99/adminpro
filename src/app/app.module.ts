@@ -12,20 +12,21 @@ import { APP_ROUTES } from 'src/app.routes';
 
 // Modulos
 import { PagesModule } from './pages/pages.module';
-import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component';
-
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegistersComponent,
+    RegistersComponent
+
   ],
   imports: [
     PagesModule,
     BrowserModule,
     AppRoutingModule,
-    APP_ROUTES
+    APP_ROUTES,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
